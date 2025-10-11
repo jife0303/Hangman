@@ -1,4 +1,9 @@
-"""Module for logging information onto terminal."""
+"""Module for logging information onto terminal.
+
+info(): add 'GAME | INFO: ' before the given data.
+error(): add 'GAME | ERROR: ' before the given data.
+play(): add 'GAME | PLAY: ' before the given data.
+"""
 
 
 def info(data: str):
@@ -19,10 +24,10 @@ def error(data: str):
     print(f"GAME | ERROR: {data}")
 
 
-def game(data: str):
+def play(data: str):
     """Print game message to terminal.
 
     Args:
-        data (str): print this string data with prefix 'GAME | GAME: '.
+        data (str): print this string data with prefix 'GAME | PLAY: '.
     """
-    print(f"GAME | GAME: {data}")
+    print(f"GAME | PLAY: {data}")

@@ -1,11 +1,16 @@
-"""Module for testing player.py"""
+"""Module for testing player.py."""
 import pytest
 from src.player import set_name
 from src.player import Player
 
-# Used for testing with a player object
+
 @pytest.fixture
 def player():
+    """Initialize a player for testing.
+
+    Returns:
+        Player
+    """
     return Player("Jialin", 1)
 
 
@@ -19,4 +24,3 @@ def test_set_name():
 def test_player():
     """Test for initialization of players."""
     assert Player("Jialin", 1)
-
